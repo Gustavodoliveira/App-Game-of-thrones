@@ -1,3 +1,8 @@
 .Container {
-    background-image: url('../../assets/1294180.jpg');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Container_logo{
 }

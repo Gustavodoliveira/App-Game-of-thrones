@@ -3,9 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
+    background-color: #000000c5;
     
     h1 {
         letter-spacing: .6rem;
     }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: white
+    }
+
     
 }

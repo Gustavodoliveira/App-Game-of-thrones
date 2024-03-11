@@ -1,22 +1,25 @@
-import Link from 'next/link'
+
 import Class from './header.module.css'
 import Image from 'next/image'
 import logo from '../../assets/logo_got-removebg-preview.png'
+import NavLink from '../Nav-link/nav-link'
+import Link from 'next/link'
+
 
 const Header = () => {
     return (
         <>
             <header className={Class.Container}>
 
-                <Image src={logo} alt='Logo Game of Thrones' width={150} height={70} loading='lazy' />
+                <Link href={'/'}>
+                    <Image src={logo} alt='Logo Game of Thrones' width={150} height={70} loading='lazy' />
+                </Link>
 
-
-
-                <nav>
+                <nav className={Class.Container_navigation}>
                     <ul>
-                        <li><Link href={'/'}>Personagens</Link></li>
-                        <li><Link href={'/'}>About</Link></li>
-                        <li><Link href={'/'}>Something</Link></li>
+                        <li><NavLink href={'/character'}>Character</NavLink></li>
+                        <li><NavLink href={'/about'}>About</NavLink></li>
+                        <li><NavLink href={'/character'}>Character</NavLink></li>
                     </ul>
                 </nav>
 

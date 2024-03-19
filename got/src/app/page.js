@@ -3,6 +3,7 @@
 import styles from "./page.module.css";
 import imgMain from '../../public/assets/_106957807_hi052845649.reuters.976-removebg-preview.png'
 import Image from "next/image";
+import Button from "@/components/button/button";
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
                     <p>
                         A narrativa é conhecida por sua intrincada teia de traições, alianças, política e intrigas, e conta com uma ampla variedade de personagens, cada um com motivações complexas. Elementos de fantasia, como dragões e criaturas sobrenaturais, são incorporados à história, tornando-a ainda mais envolvente.
                     </p>
+                    <Button />
                 </div>
             </header>
 

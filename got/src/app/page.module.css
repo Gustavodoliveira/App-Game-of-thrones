@@ -3,5 +3,8 @@
 }
 
 .Container_header {
-    
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
 }

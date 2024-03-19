@@ -1,4 +1,12 @@
 :root {
+    --color-primary: #0C1820;
+    --color-secondary: #172421;
+    --color-tertiary: #4A3120;
+    --color-tertiary-light: #6C3716;
+    --color-white: #A5A294;
+
+
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;

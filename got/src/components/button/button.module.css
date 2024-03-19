@@ -1,0 +1,4 @@
+.btn_default{
+    border: none;
+    background-color: var(--color-primary);
+}

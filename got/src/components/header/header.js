@@ -1,7 +1,7 @@
 
 import Class from './header.module.css'
 import Image from 'next/image'
-import logo from '../../assets/logo_got-removebg-preview.png'
+import logo from '../../../public/assets/logo_got-removebg-preview.png'
 import NavLink from '../Nav-link/nav-link'
 import Link from 'next/link'
 

@@ -19,7 +19,7 @@ export default function Home() {
                     <p>
                         A narrativa é conhecida por sua intrincada teia de traições, alianças, política e intrigas, e conta com uma ampla variedade de personagens, cada um com motivações complexas. Elementos de fantasia, como dragões e criaturas sobrenaturais, são incorporados à história, tornando-a ainda mais envolvente.
                     </p>
-                    <Button />
+                    <Button Children={'Personagens'} Class={'glow-on-hover '} />
                 </div>
             </header>
 

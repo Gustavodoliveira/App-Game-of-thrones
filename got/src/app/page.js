@@ -4,11 +4,12 @@ import styles from "./page.module.css";
 import imgMain from '../../public/assets/_106957807_hi052845649.reuters.976-removebg-preview.png'
 import Image from "next/image";
 import Button from "@/components/button/button";
+import Character from "@/components/characters/character";
 import { fetchData } from "./fetchData";
 
 export default function Home() {
-    const { data } = fetchData()
-    console.log(data);
+    const { data } = fetchData();
+
     return (
         <main className={styles.Container}>
             <header className={styles.Container_header}>
@@ -25,7 +26,12 @@ export default function Home() {
                     <Button Children={'Personagens'} />
                 </div>
             </header>
+            <section className={styles.section_characters}>
+                {data?.map((Person, index) => (
+                    <Character person={Person} key={index} />
+                ))}
 
+            </section>
         </main>
     );
 }

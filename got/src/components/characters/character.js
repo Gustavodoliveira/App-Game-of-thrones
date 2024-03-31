@@ -6,9 +6,7 @@ import style from "./character.module.css"
 const Character = ({ person }) => {
     return (
         <div className={style.character_container}>
-            <div style={style.character_image}>
-                <Image src={person.imageUrl} width={200} height={200} alt={person.fullName} />
-            </div>
+            <Image src={person.imageUrl} width={200} height={200} alt={person.fullName} className={style.character_image} />
             <div className={style.character_name}>
                 <h3>{person.firstName} {person.lastName}</h3>
             </div>

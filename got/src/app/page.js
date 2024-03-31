@@ -27,6 +27,7 @@ export default function Home() {
                 </div>
             </header>
             <section className={styles.section_characters}>
+
                 {data?.map((Person, index) => (
                     <Character person={Person} key={index} />
                 ))}

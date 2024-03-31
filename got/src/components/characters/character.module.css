@@ -1,5 +1,46 @@
 .character_container{
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
     margin: 10px;
+    position: relative;
+    transition: ease-in-out .3s;
+    border-radius: 50%;
+}
+
+.character_image:hover{
+    opacity: 0.2;
+    background-color: rgb(0, 0, 0);
+}
+
+.character_container:hover > .character_name,.character_container:hover > .character_title {
+    visibility: visible;
+    opacity: 1;
+    left: 30%;
+} 
+
+
+.character_image{
+    border-radius: 50%;
+}
+
+.character_name{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 1%;
+    font-size: .9rem;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+z-index: -1;
+}
+
+.character_title {
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 1%;
+    font-size: .8rem;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+    z-index: -1;
 }
